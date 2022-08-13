@@ -1,7 +1,7 @@
-import { createMuiTheme, CssBaseline } from '@material-ui/core';
-import { ThemeProvider } from '@material-ui/styles';
 import * as React from 'react';
 import { scale } from './storybook_utils.tsx/utils';
+import {ThemeProvider} from "@mui/styles";
+import {createMuiTheme, CssBaseline} from "@mui/material";
 
 const theme = createMuiTheme({
 	palette: {

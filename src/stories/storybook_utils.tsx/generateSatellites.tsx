@@ -1,5 +1,6 @@
-import { makeStyles, Theme, Typography } from '@material-ui/core';
 import * as React from 'react';
+import {Theme, Typography} from "@mui/material";
+import {makeStyles} from "@mui/styles";
 
 export function generateSatellites(count: number, weird?: boolean, text?: boolean) {
 	const classes = useStyles();

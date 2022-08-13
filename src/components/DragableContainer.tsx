@@ -1,8 +1,8 @@
 // prettier-ignore
-import { makeStyles } from '@material-ui/core';
 import * as React from "react";
 import { animated, useSpring } from "react-spring";
 import { useDrag } from "react-use-gesture";
+import {makeStyles} from "@mui/styles";
 interface Props {
   children: React.ReactNode;
   on: boolean;

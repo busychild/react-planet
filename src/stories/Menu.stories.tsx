@@ -1,19 +1,19 @@
-import { IconButton, makeStyles, Paper, Theme } from '@material-ui/core';
-import DeleteIcon from '@material-ui/icons/Delete';
-import EditIcon from '@material-ui/icons/Edit';
-import InfoIcon from '@material-ui/icons/InfoOutlined';
-import MenuIcon from '@material-ui/icons/Menu';
-import { boolean } from '@storybook/addon-knobs';
+import MenuIcon from '@mui/icons-material/Menu';
+import InfoIcon from '@mui/icons-material/Info';
+import EditIcon from '@mui/icons-material/Edit';
+import DeleteIcon from '@mui/icons-material/Delete';
 import { storiesOf } from '@storybook/react';
 import * as React from 'react';
 import { Planet } from '../components';
 import { withTheme } from './index.stories';
+import {IconButton, Paper, Theme} from "@mui/material";
+import {makeStyles} from "@mui/styles";
 
 storiesOf('Planet', module).add('menu', () => {
 	const classes = useStyles();
 
-	const bounce = boolean('bounce', false);
-	const bounceOnClose = boolean('bounce on close', false);
+	const bounce = false;
+	const bounceOnClose   =false;
 
 	return withTheme(
 		<div className={classes.root}>

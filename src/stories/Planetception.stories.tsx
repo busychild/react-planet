@@ -1,9 +1,11 @@
-import { makeStyles, Theme } from "@material-ui/core";
 import { storiesOf } from "@storybook/react";
 import * as React from "react";
 import { Planet } from "../components";
 import { withTheme } from "./index.stories";
 import { generateSatellites } from "./storybook_utils.tsx/generateSatellites";
+import {makeStyles} from "@mui/styles";
+import {Theme} from "@mui/material";
+import { styled } from "@mui/material/styles";
 
 storiesOf("Planet", module).add("planetception (planets as satellites)", () => {
   const classes = useStyles();

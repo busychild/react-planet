@@ -1,9 +1,9 @@
 // prettier-ignore
-import { makeStyles } from '@material-ui/core';
 import * as React from "react";
 import { animated, useSpring } from "react-spring";
 import useResizeObserver from "use-resize-observer";
 import { DragableContainer } from "./DragableContainer";
+import {makeStyles} from "@mui/styles";
 
 interface Props {
   index: number;

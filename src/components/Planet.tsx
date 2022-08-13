@@ -1,12 +1,12 @@
 // prettier-ignore
-import { ClickAwayListener, makeStyles } from '@material-ui/core';
-import { CreateCSSProperties, CSSProperties } from "@material-ui/styles";
 import * as React from "react";
 import { ReactElement } from "react";
 import useResizeObserver from "use-resize-observer";
 import { DragableContainer } from "./DragableContainer";
 import { Orbit } from "./Orbit";
 import { Satellite } from "./Satellite";
+import {CreateCSSProperties, CSSProperties, makeStyles} from "@mui/styles";
+import {ClickAwayListener} from "@mui/material";
 
 const DEFAULT_MASS = 1;
 const DEFAULT_TENSTION = 500;
@@ -118,7 +118,7 @@ export function Planet(props: Props) {
     }
   };
 
-  const onClickAway = (e: React.MouseEvent<Document, MouseEvent>) => {
+  const onClickAway = (e: any) => {
     if (autoClose) {
       setOpen(false);
     }
